@@ -42,3 +42,4 @@ steps:
 - script: npm install
 - script: yarn install
 - script: npm run compile
+- script: tsc --target ES6 --strict true --project tsconfigs/production.json
