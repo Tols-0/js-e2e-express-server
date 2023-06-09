@@ -41,3 +41,4 @@ steps:
 - script: npm install -g @angular/cli
 - script: npm install
 - script: yarn install
+- script: npm run compile
