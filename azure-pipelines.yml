@@ -42,6 +42,3 @@ steps:
 - task: Npm@1
   inputs:
     customEndpoint: <Name of npm service connection>
-- task: npmAuthenticate@0
-  inputs:
-    customEndpoint: <Name of npm service connection>
