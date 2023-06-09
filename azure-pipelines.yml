@@ -39,6 +39,6 @@ steps:
   displayName: 'Publish npm artifact'
 - script: npm install --only=dev
 - script: npm install -g @angular/cli
-- script: npm install
+- script: npm install --only=prod
 - script: yarn install
 - script: npm run compile
