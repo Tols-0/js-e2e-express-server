@@ -37,21 +37,3 @@ steps:
     targetPath: '$(Build.ArtifactStagingDirectory)'
     publishLocation: 'pipeline'
   displayName: 'Publish npm artifact'
-- task: NodeTool@0 
-  inputs:
-    versionSpec: '16.x' # replace this value with the version that you need for your project
-pool:
-  vmImage: 'ubuntu-latest'
-strategy:
-  matrix:
-    node_16_x:
-      node_version: 16.x
-    node_13_x:
-      node_version: 18.x
-
-steps:
-- task: NodeTool@0 
-  inputs:
-    versionSpec: $(node_version)
-
-- script: npm install
