@@ -38,3 +38,10 @@ steps:
     publishLocation: 'pipeline'
   displayName: 'Publish npm artifact'
 - script: npm install --only=dev
+- script: npm install
+- task: Npm@1
+  inputs:
+    customEndpoint: <Name of npm service connection>
+- task: npmAuthenticate@0
+  inputs:
+    customEndpoint: <Name of npm service connection>
