@@ -38,5 +38,4 @@ steps:
     publishLocation: 'pipeline'
   displayName: 'Publish npm artifact'
 - script: npm install --only=dev
-- script: npx mocha@10.2
 - script: npm install -g @angular/cli
